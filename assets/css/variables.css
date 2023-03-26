@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+:root {
+
+    /* color */
+    --color-white: #FFF;
+    --color-grayMain: #555;
+    --color-graySub: #B1AEAE;
+    --color-point-blue: #2D78A5;
+    --color-point-greenYellow: #DEF387;
+    --color-point-yellow: #F3DB87;
+    --color-white: #FFF;
+    --color-primary: #C4C4C4;
+    --color-primary-light: #F0F5F9;
+    
+    /* font-style */
+    --fontStyle-banger: 'Bangers', cursive;
+    --fontStyle-jeju: 'JejuMyeongjo';
+    --fontStyle-montserrat: 'Montserrat', sans-serif;
+
+    /* font-size */
+    --fontSize-title-xl: 7.2rem;
+    --fontSize-title-l: 2.8rem;
+    --fontSize-title-m: 2rem;
+    --fontSize-contents-xl: 3rem;
+    --fontSize-contents-l: 1.8rem;
+    --fontSize-contents: 1.5rem;
+    --fontSize-contents-sub: 1.4rem;
+    --fontSize-contents-mini: 1rem;
+
+    /* tansition */
+    --transition-normal: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    --transition-fast: all 0.2s ease-in-out;
+    
+    /* shadow */
+    --shadow_4_15: 2px 2px 4px rgba(0,0,0,.15);
+    --shadow_10_1: 5px 5px 10px rgba(0,0,0,.1);
+    --shadow_30_15: 30px 2px 30px rgba(0,0,0,.15);
+
+    
+}
