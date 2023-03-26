@@ -14,8 +14,8 @@
 /* ico */
 [class*='ico--'] { display: inline-block; background-position: center; background-repeat: no-repeat }
 .ico--html, .ico--css { width: 44px; height: 62px; background-size: 44px 62px; } 
-.ico--html { background-image: url(/assets/img/ico-html.png); } 
-.ico--css { background-image: url(/assets/img/ico-css.png); } 
+.ico--html { background-image: url(assets/img/ico-html.png); } 
+.ico--css { background-image: url(assets/img/ico-css.png); } 
 .ico--js,
 .ico--photoshop, 
 .ico--illustrator,
@@ -23,40 +23,40 @@
 .ico--github,
 .ico--jira,
 .ico--redmine { width: 50px; height: 50px; background-size: 50px; } 
-.ico--photoshop { background-image: url(/assets/img/ico-photoshop.png); } 
-.ico--illustrator { background-image: url(/assets/img/ico-ai.png); } 
-.ico--git { background-image: url(/assets/img/ico-git.png); } 
-.ico--github { background-image: url(/assets/img/ico-github.png); } 
-.ico--jira { background-image: url(/assets/img/ico-jira.png); } 
-.ico--redmine { background-image: url(/assets/img/ico-redmine.png); } 
-.ico--js { background-image: url(/assets/img/ico-js.png); } 
-.ico--zeplin { width: 62px; height: 48px; background-image: url(/assets/img/ico-zeplin.png); background-size: 62px 48px; } 
-.ico--figma { width: 41px; height: 60px; background-image: url(/assets/img/ico-figma.png); background-size: 41px 60px; } 
-.ico--jquery { width: 93px; height: 22px; background-image: url(/assets/img/ico-jquery.png); background-size: 93px 22px; } 
+.ico--photoshop { background-image: url(assets/img/ico-photoshop.png); } 
+.ico--illustrator { background-image: url(assets/img/ico-ai.png); } 
+.ico--git { background-image: url(assets/img/ico-git.png); } 
+.ico--github { background-image: url(assets/img/ico-github.png); } 
+.ico--jira { background-image: url(assets/img/ico-jira.png); } 
+.ico--redmine { background-image: url(assets/img/ico-redmine.png); } 
+.ico--js { background-image: url(assets/img/ico-js.png); } 
+.ico--zeplin { width: 62px; height: 48px; background-image: url(assets/img/ico-zeplin.png); background-size: 62px 48px; } 
+.ico--figma { width: 41px; height: 60px; background-image: url(assets/img/ico-figma.png); background-size: 41px 60px; } 
+.ico--jquery { width: 93px; height: 22px; background-image: url(assets/img/ico-jquery.png); background-size: 93px 22px; } 
 .ico--person, .ico--gift, .ico--home, .ico--send {
     width: 38px; height: 38px; background-size: 35px;
 }
 .ico--person {
-    background-image: url(/assets/img/ico-person.png);
+    background-image: url(assets/img/ico-person.png);
 }
 .ico--gift {
-    background-image: url(/assets/img/ico-gift.png);
+    background-image: url(assets/img/ico-gift.png);
 }
 .ico--home {
-    background-image: url(/assets/img/ico-home.png);
+    background-image: url(assets/img/ico-home.png);
 }
 .ico--send {
-    background-image: url(/assets/img/ico-send.png);
+    background-image: url(assets/img/ico-send.png);
 }
 .ico--phone, .ico--email {
     width: 24px; height: 24px; background-size: 24px;
     vertical-align: middle;
 }
 .ico--phone {
-    background-image: url(/assets/img/ico-phone.png);
+    background-image: url(assets/img/ico-phone.png);
 }
 .ico--email {
-    background-image: url(/assets/img/ico-email.png);
+    background-image: url(assets/img/ico-email.png);
 }
 
 html { 
@@ -683,7 +683,7 @@ main {
     position: absolute;
     left: -40px;
     top: -4px;
-    background: url(/assets/img/ico-smile.png)center / contain no-repeat;
+    background: url(assets/img/ico-smile.png)center / contain no-repeat;
     margin-right: 7px;
     animation: move_y_10 1s infinite ease-in-out;
 }
@@ -748,13 +748,13 @@ main {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url(/assets/img/ico-send-24.png)center / 24px no-repeat;
+    background: url(assets/img/ico-send-24.png)center / 24px no-repeat;
     vertical-align: middle;
 }
 .btn--text-copy {
     width: 24px;
     height: 24px;
-    background: url(/assets/img/ico-copy.png)center / 24px no-repeat;
+    background: url(assets/img/ico-copy.png)center / 24px no-repeat;
     vertical-align: middle;
     margin-left: 5px;
 }
