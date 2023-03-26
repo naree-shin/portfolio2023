@@ -1,6 +1,14 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function(){
+    // const cursor = document.querySelector('.cursor'); 
+
+    // cursor.addEventListener('mousemove',(e) => { 
+    //     cursor.style.left = `${e.clientX}px`; 
+    //     cursor.style.top = `${e.clientY}px`; 
+    //     console.log(1);
+    // });
+
     
     const $mainTop = document.querySelector("aside");
     const $container = document.querySelector(".container");
@@ -9,20 +17,6 @@ document.addEventListener("DOMContentLoaded", function(){
         $mainTop.classList.add('hide');
         $container.style.display = "block";
     });
-
-    // window.addEventListener('scroll',(event) => { 
-    //     if (winTop > 100) {
-    //         $header.classList.add('sticky-header');
-    //     } else {
-    //         $header.classList.remove("sticky-header");
-    //     }
-    //     console.log(winTop)
-    // });
-
-
-    // var scrollPosition = window.scrollY || document.querySelector("main").scrollTop;
-    
-
     
     const $header = document.querySelector("header");
     
@@ -64,21 +58,21 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-    // div 취득
+    
     const emailAddress = document.querySelector(".email-address");
     const btnTextCopy = document.querySelector(".btn--text-copy");
     const toolTip = document.querySelector(".tooltip-layer");
 
-    // button 클릭 이벤트
+    
     btnTextCopy.addEventListener('click',(event) => {
-        // div의 내용(textContent)을 복사한다.
         window.navigator.clipboard.writeText(emailAddress.textContent).then(() => {
-            // 복사가 완료되면 호출된다.
             toolTip.style.display = 'inline-block';
             setTimeout(function() {
                 toolTip.style.display = 'none';
             }, 500);
         });
     });
+
+
     
 });

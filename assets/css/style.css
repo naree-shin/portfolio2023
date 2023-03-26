@@ -93,8 +93,17 @@ img {
     display: flex;
     flex-direction: column;
 }
-
-
+body {
+    cursor: none;
+}
+/* .cursor{
+	width: 20px; height: 20px; 
+	background-color: #000; 
+	border-radius: 10px; 
+	position: absolute; left: 0; top: 0; 
+	z-index: 999; 
+	transition: background-color .2s, border-color .2s, border-radius .2s, transform .6s
+} */
 /* header */
 header {
     /* position: sticky; */
@@ -164,6 +173,7 @@ aside {
     animation: move_bg_linear 10s ease infinite;
 
     transition: var(--transition-fast);
+    cursor: pointer;
 }
 aside.hide {
     height: 0;
