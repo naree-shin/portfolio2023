@@ -106,7 +106,8 @@ img {
 } */
 /* header */
 header {
-    /* position: sticky; */
+    position: fixed;
+    left: 0;
     top: 0;
     width: 100%;
     padding: 86px 70px 5px;
@@ -139,7 +140,6 @@ header h1 {
     transition: var(--transition-fast);
 }
 header.sticky-header {
-    position: sticky;
     padding: 10px 70px 5px;
     -webkit-transition: var(--transition-fast);
     transition: var(--transition-fast);
@@ -302,14 +302,14 @@ aside::before {
 
 /* layout */
 main {
-    padding: 150px 70px 80px;
+    padding: 430px 70px 80px;
     position: relative;
 }
 /* intro */
 .intro__wrap {
     position: fixed;
     left: 70px;
-    top: 250px;
+    top: 40vh;
     z-index: -1;
 }
 .intro-text__list {

@@ -24,19 +24,21 @@ document.addEventListener("DOMContentLoaded", function(){
         let winTop = document.querySelector('html').scrollTop;
         let introTextItem = document.querySelectorAll('.intro-text__item');
         let introWrap = document.querySelector('.intro__wrap');
+        let mainWrap = document.querySelector('main');
         // console.log(winTop)
         if (winTop > 0) {
             $header.classList.add('sticky-header');
             introTextItem.forEach((alItem) => {
                 alItem.classList.add('active');
             });
+            // window.scrollTo({left:0, top:mainWrap.offsetTop})
         } else {
             $header.classList.remove("sticky-header");
 
             if(winTop > 500) {
                 introWrap.style.display = 'none';
             }
-        }
+        } 
     }
     // function introTextEvent() {
     //     let winTop = document.querySelector('html').scrollTop;
