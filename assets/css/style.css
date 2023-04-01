@@ -93,9 +93,9 @@ img {
     display: flex;
     flex-direction: column;
 }
-body {
+/* body {
     cursor: none;
-}
+} */
 /* .cursor{
 	width: 20px; height: 20px; 
 	background-color: #000; 
