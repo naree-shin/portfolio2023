@@ -48,7 +48,7 @@
 .ico--send {
     background-image: url(../img/ico-send.png);
 }
-.ico--phone, .ico--email {
+.ico--phone, .ico--email, .ico--download {
     width: 24px; height: 24px; background-size: 24px;
     vertical-align: middle;
 }
@@ -57,6 +57,9 @@
 }
 .ico--email {
     background-image: url(../img/ico-email.png);
+}
+.ico--download {
+    background-image: url(../img/ico-download.png);
 }
 
 html { 
@@ -307,13 +310,14 @@ main {
 }
 /* intro */
 .intro__wrap {
-    position: fixed;
-    left: 70px;
-    top: 40vh;
+    position: sticky;
+    top: 100px;
     z-index: -1;
 }
 .intro-text__list {
     padding: 30px 0 200px;
+    margin: 0 auto;
+    width: fit-content;
 }
 .intro-text__item {
     position: relative;
@@ -392,13 +396,13 @@ main {
     }
 }
 .card-list {
-    margin-left: auto;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     flex-flow: column wrap;
     justify-content: stretch;
-    align-items: flex-end;
-    align-content: flex-end;
+    align-items: center;
+    align-content: center;
     height: 1500px;
     gap: 24px;
     margin-bottom: 100px;
