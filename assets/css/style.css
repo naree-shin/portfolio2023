@@ -31,8 +31,11 @@
 .ico--redmine { background-image: url(../img/ico-redmine.png); } 
 .ico--js { background-image: url(../img/ico-js.png); } 
 .ico--zeplin { width: 62px; height: 48px; background-image: url(../img/ico-zeplin.png); background-size: 62px 48px; } 
+.ico--scss { width: 60px; height: 45px; background-image: url(../img/ico-scss.png); background-size: 60px 45px; } 
 .ico--figma { width: 41px; height: 60px; background-image: url(../img/ico-figma.png); background-size: 41px 60px; } 
 .ico--jquery { width: 93px; height: 22px; background-image: url(../img/ico-jquery.png); background-size: 93px 22px; } 
+.ico--slack { width: 45px; height: 45px; background-image: url(../img/ico-slack.png); background-size: 45px 45px; } 
+.ico--notion { width: 47px; height: 49px; background-image: url(../img/ico-notion.png); background-size: 47px 49px; } 
 .ico--person, .ico--gift, .ico--home, .ico--send {
     width: 38px; height: 38px; background-size: 35px;
 }
@@ -315,7 +318,7 @@ main {
     z-index: -1;
 }
 .intro-text__list {
-    padding: 30px 0 200px;
+    padding: 130px 0 700px;
     margin: 0 auto;
     width: fit-content;
 }
@@ -353,6 +356,9 @@ main {
 .intro-text__item.active:nth-of-type(4) p::after {
     animation-delay: 3.5s;
 }
+.intro-text__item.active:nth-of-type(5) p::after {
+    animation-delay: 4.5s;
+}
 @keyframes move_toRight {
     0% {
         left: -100%;
@@ -385,6 +391,9 @@ main {
 .intro-text__item.active:nth-of-type(4) .check {
     animation-delay: 4s;
 }
+.intro-text__item.active:nth-of-type(5) .check {
+    animation-delay: 5s;
+}
 @keyframes dash {
     0% {
         stroke-dashoffset: 60;
@@ -409,7 +418,7 @@ main {
 }
 .card-list__box {
     position: relative;
-    width: 380px;
+    width: calc(100% / 4);
     padding: 30px 30px;
     border-radius: 40px;
     box-sizing: border-box;
@@ -428,6 +437,14 @@ main {
 }
 .card-list__box--skill {
     background: var(--color-primary-light);
+    padding-bottom: 30px;
+}
+.skill-title {
+    font-size: 1.8rem;
+    padding: 0 20px 40px;
+    text-align: center;
+    word-break: keep-all;
+    line-height: 1.6;
 }
 
 /* card-hover */
@@ -439,7 +456,6 @@ main {
     height: 100%;
     border-radius: 40px;
     
-    /* background-color: var(--color-point-greenYellow); */
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease-in;
     opacity: 0;
@@ -504,7 +520,8 @@ main {
 }
 /* card-hover--blue */
 .visual--hover.color--point-blue {
-    background-color: var(--color-point-blue);
+    /* background-color: var(--color-point-blue); */
+    background-color: rgba(45, 120, 165, 0.9);
 }
 .visual--hover.color--point-blue .visual--hover__link__wrap {
     border: 0.5em solid var(--color-white);
@@ -524,6 +541,7 @@ main {
 /* card-hover--primay-light */
 .visual--hover.color--gray-main {
     background-color: var(--color-grayMain);
+    background-color: rgba(85, 85, 85, .9);
 }
 .visual--hover.color--gray-main .visual--hover__link__wrap {
     border: 0.5em solid var(--color-white);
@@ -548,6 +566,7 @@ main {
 }
 .text-content__item {
     padding: 20px 0;
+    word-break: keep-all;
 }
 .text-content__item:first-child {
     padding: 20px 0;
@@ -562,10 +581,14 @@ main {
     font-size: var(--fontSize-title-m);
     font-family: var(--fontStyle-montserrat);
     font-weight: 700;
+    line-height: 1.5;
 }
 .content-title__sub {
     font-size: var(--fontSize-contents-sub);
     word-break: keep-all;
+}
+.content-title__sub b {
+    font-weight: 700;
 }
 .text-list {
     margin-top: 16px;
@@ -596,12 +619,11 @@ main {
 }
 
 /* card-skill */
-.skill-list {
+/* .skill-list {
     margin-top: 30px;
 }
 .skill-list__box {
     display: flex;
-    /* align-items: center; */
     gap: 20px;
 }
 .skill-list__box.flex-wrap--column {
@@ -627,8 +649,18 @@ main {
     width: 93px;
     display: inline-block;
     transform: scale(0.9);
+} */
+.skill-ico__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 20px 60px;
 }
-
+.skill-ico__list [class*=ico--] {
+    flex: none;
+}
 /* keyword */
 .keyword__list {
     display: flex;
