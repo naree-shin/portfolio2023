@@ -70,7 +70,7 @@ html {
     color: var(--color-grayMain); 
     font-weight: 400; 
     font-size: 62.5%; 
-    letter-spacing: -0.05em;
+    letter-spacing: -0.03em;
 } 
 body { 
     font-size: 1.2rem; 
@@ -316,6 +316,7 @@ main {
     position: sticky;
     top: 100px;
     z-index: -1;
+    font-family: var(--fontStyle-jeju);
 }
 .intro-text__list {
     padding: 130px 0 700px;
@@ -579,7 +580,7 @@ main {
 }
 .content-title {
     font-size: var(--fontSize-title-m);
-    font-family: var(--fontStyle-montserrat);
+    /* font-family: var(--fontStyle-montserrat); */
     font-weight: 700;
     line-height: 1.5;
 }
@@ -599,6 +600,9 @@ main {
     font-size: var(--fontSize-contents);
     word-break: keep-all;
 } 
+.text-list__item + .text-list__item {
+    margin-top: 5px;
+}
 
 /* card-profile */
 .profile-img {
@@ -666,7 +670,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: stretch;
-    gap: 10px;
+    gap: 5px 10px;
 }
 .keyword__item {
     display: inline-flex;
@@ -676,6 +680,8 @@ main {
     color: var(--color-grayMain);
     font-size: var(--fontSize-title-m);
     line-height: var(--fontSize-title-m);
+    font-weight: 300;
+    /* font-family: var(--fontStyle-montserrat); */
 }
 /* contact */
 .contact__wrap {
